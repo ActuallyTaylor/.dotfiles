@@ -1,0 +1,108 @@
+/* =============================================================================
+ *
+ * Waybar configuration
+ *
+ * Configuration reference: https://github.com/Alexays/Waybar/wiki/Configuration
+ *
+ * =========================================================================== */
+
+/* -----------------------------------------------------------------------------
+ * Base styles
+ * -------------------------------------------------------------------------- */
+
+@define-color base  #1E1E2E;
+@define-color text  #CDD6F4;
+@define-color warn  #fab387;
+@define-color crit  #f38ba8;
+
+@keyframes blink-warning {
+    70% {
+        color: @text;
+    }
+
+    to {
+        color: @warn ;
+    }
+}
+
+@keyframes blink-critical {
+    70% {
+      color: @text;
+    }
+
+    to {
+        color: @crit;
+    }
+}
+
+/* Reset all styles */
+* {
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+    margin: 1px;
+    padding: 0;
+}
+
+/* The whole bar */
+#waybar {
+    background: transparent;
+    color: @text;
+    font-family: UbuntuMono;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px
+}
+
+#battery,
+#clock,
+#backlight,
+#network,
+#pulseaudio,
+#custom-power {
+    padding:0.5rem 0.6rem;
+    margin: 1px 0px;
+}
+
+.modules-left, .modules-center, .modules-right {
+    background: @base;
+    border: 1px solid #eba0ac;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-radius: 7px;
+}
+
+
+#battery {
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#battery.warning {
+    color: orange;
+}
+
+#battery.critical {
+    color: red;
+}
+
+#battery.warning.discharging {
+    animation-name: blink-warning;
+    animation-duration: 3s;
+}
+
+#battery.critical.discharging {
+    animation-name: blink-critical;
+    animation-duration: 2s;
+}
+
+#network.disconnected {
+    color: @warn;
+}
+
+#custom-power {
+    color: #cba6f7;
+}

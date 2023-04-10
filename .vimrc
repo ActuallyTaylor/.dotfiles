@@ -29,13 +29,18 @@ set undofile
 set undoreload=10000
 
 " PLUGINS
-
 call plug#begin()
 
 Plug 'dense-analysis/ale'
 Plug 'preservim/nerdtree'
+Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 
 call plug#end()
+
+" THEME
+set termguicolors
+:colorscheme catppuccin_mocha
+
 
 " STATUS LINE
 set statusline=
@@ -64,7 +69,7 @@ nnoremap <c-l> <c-w>l
 " CTRL+LEFT: Move split to the left 
 noremap <c-up> <c-w>+
 noremap <c-down> <c-w>-
-noremap <c-right> <c-w>>
-noremap <c-left> <c-w><
+noremap <c-left> <c-w>>
+noremap <c-right> <c-w><
 
 
