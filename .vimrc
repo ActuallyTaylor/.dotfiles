@@ -1,14 +1,14 @@
-set tabstop=8
-set softtabstop=0
-set expandtab
-set shiftwidth=1
-set smarttab
+" GENERAL SETTINGS
 set nocompatible
 filetype on
 filetype plugin on
 filetype indent on
 syntax on
 set number
+set shiftwidth=4
+set tabstop=4
+set expandtab
+set smarttab
 set nowrap
 set incsearch
 set ignorecase
@@ -19,31 +19,52 @@ set hlsearch
 set history=1000
 set wildmenu
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsxs
-set wildmode=longest,list
+set wildmode=list:longest
 set mouse=a
 set title
 set completeopt=noinsert,menuone,noselect
 
+set undodir=~/.vim/backup
+set undofile
+set undoreload=10000
+
+" PLUGINS
+
 call plug#begin()
 
-" NERD tree will be loaded on the first invocation of NERDTreeToggle command
-Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
-"
-" Multiple commands
-Plug 'junegunn/vim-github-dashboard', { 'on': ['GHDashboard', 'GHActivity'] }
-
-" Loaded when clojure file is opened
-Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
-
-" Multiple file types
-Plug 'kovisoft/paredit', { 'for': ['clojure', 'scheme'] }
-
-" On-demand loading on both conditions
-Plug 'junegunn/vader.vim',  { 'on': 'Vader', 'for': 'vader' }
-
-" Code to execute when the plugin is lazily loaded on demand
-Plug 'junegunn/goyo.vim', { 'for': 'markdown' }
-
-autocmd! User goyo.vim echom 'Goyo is now loaded!'
+Plug 'dense-analysis/ale'
+Plug 'preservim/nerdtree'
 
 call plug#end()
+
+" STATUS LINE
+set statusline=
+set statusline+=\ %F\ %M\ %Y\ %R
+set statusline+=%=
+set statusline+=\ ascii:\ %b\ hex:\ 0x%B\ row:\ %l\ col:\ %c\ percent:\ %p%%
+set laststatus=2
+
+" MAPPING
+map <F2> <Esc>:NERDTree<CR>
+
+" Control VIM splits using CTRL+j, CTR+k, CTRL+h, CTRL+l.
+" CTRL+j: Move to window below
+" CTRL+k: Move to the window above
+" CTRL+l: Move to the window to the left
+" CTRL+h: Move to the window on the right
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+nnoremap <c-h> <c-w>h
+nnoremap <c-l> <c-w>l
+
+" Resize split windows using arrow keys
+" CTRL+UP: Move split vertically up
+" CTRL+DOWN: Move split vertically down
+" CTRL+RIGHT: Move split to the right
+" CTRL+LEFT: Move split to the left 
+noremap <c-up> <c-w>+
+noremap <c-down> <c-w>-
+noremap <c-right> <c-w>>
+noremap <c-left> <c-w><
+
+
