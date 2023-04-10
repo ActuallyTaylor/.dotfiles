@@ -38,9 +38,13 @@ Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 call plug#end()
 
 " THEME
+" We are detecting the OS because on macOS iTerm2 takes care of all of the
+" colors for us.
+let os = substitute(system('uname'), "\n", "", "")
+if os == "Linux"
 set termguicolors
-:colorscheme catppuccin_mocha
-
+:colorscheme catpuccin_mocha
+endif
 
 " STATUS LINE
 set statusline=
