@@ -1,4 +1,4 @@
-" GENERAL SETTINGS
+"GENERAL SETTINGS
 set nocompatible
 filetype on
 filetype plugin on
@@ -34,6 +34,7 @@ call plug#begin()
 Plug 'dense-analysis/ale'
 Plug 'preservim/nerdtree'
 Plug 'catppuccin/vim', { 'as': 'catppuccin' }
+Plug 'valloric/youcompleteme'
 
 call plug#end()
 
@@ -71,9 +72,7 @@ nnoremap <c-l> <c-w>l
 " CTRL+DOWN: Move split vertically down
 " CTRL+RIGHT: Move split to the right
 " CTRL+LEFT: Move split to the left 
-noremap <c-up> <c-w>+
-noremap <c-down> <c-w>-
-noremap <c-left> <c-w>>
-noremap <c-right> <c-w><
-
-
+noremap <c-down> <c-w>+
+noremap <c-up> <c-w>-
+noremap <c-right> <c-w>>
+noremap <c-left> <c-w><
