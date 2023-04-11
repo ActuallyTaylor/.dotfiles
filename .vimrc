@@ -23,10 +23,14 @@ set wildmode=list:longest
 set mouse=a
 set title
 set completeopt=noinsert,menuone,noselect
+set backspace=indent,eol,start
 
 set undodir=~/.vim/backup
 set undofile
 set undoreload=10000
+
+" ALE Presettings
+let g:ale_completion_enabled = 1
 
 " PLUGINS
 call plug#begin()
