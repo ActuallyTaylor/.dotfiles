@@ -44,11 +44,11 @@ call plug#end()
 " THEME
 " We are detecting the OS because on macOS iTerm2 takes care of all of the
 " colors for us.
-let os = substitute(system('uname'), "\n", "", "")
-if os == "Linux"
-set termguicolors
-:colorscheme catppuccin_macchiato
-endif
+"let os = substitute(system('uname'), "\n", "", "")
+"if os == "Linux"
+"set termguicolors
+":colorscheme catppuccin_macchiato
+"endif
 
 " STATUS LINE
 set statusline=
@@ -79,3 +79,7 @@ noremap <c-down> <c-w>+
 noremap <c-up> <c-w>-
 noremap <c-right> <c-w>>
 noremap <c-left> <c-w><
+
+let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+let &t_SR = "\<Esc>]50;CursorShape=2\x7"
+let &t_EI = "\<Esc>]50;CursorShape=0\x7"
