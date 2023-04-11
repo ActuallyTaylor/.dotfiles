@@ -44,7 +44,7 @@ call plug#end()
 let os = substitute(system('uname'), "\n", "", "")
 if os == "Linux"
 set termguicolors
-:colorscheme catpuccin_mocha
+:colorscheme catppuccin_mocha
 endif
 
 " STATUS LINE
