@@ -34,7 +34,6 @@ call plug#begin()
 Plug 'dense-analysis/ale'
 Plug 'preservim/nerdtree'
 Plug 'catppuccin/vim', { 'as': 'catppuccin' }
-Plug 'valloric/youcompleteme'
 
 call plug#end()
 
