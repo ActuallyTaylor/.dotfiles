@@ -1,9 +1,13 @@
 "GENERAL SETTINGS
-set nocompatible
+
+set nocompatible " Disable compatibility with VI
+
+" Setup files to have syntax highlighting 
 filetype on
 filetype plugin on
 filetype indent on
 syntax on
+
 set number
 set shiftwidth=4
 set tabstop=4
@@ -12,6 +16,7 @@ set smarttab
 set nowrap
 set incsearch
 set ignorecase
+set smartcase
 set showcmd
 set showmode
 set showmatch
@@ -24,6 +29,9 @@ set mouse=a
 set title
 set completeopt=noinsert,menuone,noselect
 set backspace=indent,eol,start
+set autoread
+set hidden
+set scrolloff=3
 
 set undodir=~/.vim/backup
 set undofile
@@ -38,6 +46,10 @@ call plug#begin()
 Plug 'dense-analysis/ale'
 Plug 'preservim/nerdtree'
 Plug 'catppuccin/vim', { 'as': 'catppuccin' }
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'Raimondi/delimitMate'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
 
@@ -80,6 +92,20 @@ noremap <c-up> <c-w>-
 noremap <c-right> <c-w>>
 noremap <c-left> <c-w><
 
+" Remap Ctrl-C and Ctrl-v to use the system clipboard for yanking and pasting
+map <C-c> "*y
+map <C-v> "*p
+
+" Make the end of the lines wrap
+set ww+=<,>,[,]
+
+" Change the cursor shape depending on the vim editing mode
 let &t_SI = "\<Esc>]50;CursorShape=1\x7"
 let &t_SR = "\<Esc>]50;CursorShape=2\x7"
 let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+
+" NERDTree Settings
+let NERDTreeQuitOnOpen = 1
+let NERDTreeMinimalUI = 1
+let NERDTreeDirArrows = 1
+
