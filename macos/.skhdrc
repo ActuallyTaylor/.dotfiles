@@ -1,0 +1,53 @@
+# Move Window Focus
+ctrl + alt + cmd - left : yabai -m window --focus west
+ctrl + alt + cmd - right : yabai -m window --focus east
+ctrl + alt + cmd - up : yabai -m window --focus north
+ctrl + alt + cmd - down : yabai -m window --focus south
+ctrl + alt + cmd - x : yabai -m space --focus recent
+
+# Swap Window Positions
+ctrl + alt + cmd - l : yabai -m window --swap east
+ctrl + alt + cmd - h : yabai -m window --swap west
+ctrl + alt + cmd - j : yabai -m window --swap north
+ctrl + alt + cmd - k : yabai -m window --swap south
+
+# Reset the current space
+ctrl + alt + cmd - r : yabai -m space --balance
+
+# Toggle Window Zoom
+ctrl + alt + cmd - d : yabai -m window --toggle zoom-parent
+ctrl + alt + cmd - f : yabai -m window --toggle zoom-fullscreen
+
+# Toggle Window Split
+ctrl + alt + cmd - s : yabai -m window --toggle split
+
+# FLoat / Unfloat window and center on screen
+ctrl + alt + cmd - e : yabai -m window --toggle float --grid 4:4:1:1:2:2
+ctrl + alt + cmd + shift - e : yabai -m window --toggle float --grid 6:6:1:1:4:4 # A bigger window in the middle of the screen
+
+# Move To Another Space
+ctrl + alt + cmd - 1 : yabai -m space --focus 1
+ctrl + alt + cmd - 2 : yabai -m space --focus 2
+ctrl + alt + cmd - 3 : yabai -m space --focus 3
+ctrl + alt + cmd - 4 : yabai -m space --focus 4
+ctrl + alt + cmd - 5 : yabai -m space --focus 5
+ctrl + alt + cmd - 6 : yabai -m space --focus 6
+ctrl + alt + cmd - 7 : yabai -m space --focus 7
+ctrl + alt + cmd - 8 : yabai -m space --focus 8
+ctrl + alt + cmd - 9 : yabai -m space --focus 9
+ctrl + alt + cmd - 0 : yabai -m space --focus 10
+
+# Move Focused Window To Another Space
+ctrl + alt + cmd + shift - 1 : yabai -m window --space 1; yabai -m space --focus 1
+ctrl + alt + cmd + shift - 2 : yabai -m window --space 2; yabai -m space --focus 2
+ctrl + alt + cmd + shift - 3 : yabai -m window --space 3; yabai -m space --focus 3
+ctrl + alt + cmd + shift - 4 : yabai -m window --space 4; yabai -m space --focus 4
+ctrl + alt + cmd + shift - 5 : yabai -m window --space 5; yabai -m space --focus 5
+ctrl + alt + cmd + shift - 6 : yabai -m window --space 6; yabai -m space --focus 6
+ctrl + alt + cmd + shift - 7 : yabai -m window --space 7; yabai -m space --focus 7
+ctrl + alt + cmd + shift - 8 : yabai -m window --space 8; yabai -m space --focus 8
+ctrl + alt + cmd + shift - 9 : yabai -m window --space 9; yabai -m space --focus 9
+ctrl + alt + cmd + shift - 0 : yabai -m window --space 10; yabai -m space --focus 10
+
+# Applications
+ctrl + alt + cmd - return : osascript -e 'tell application "iTerm" to create window with default profile' 
