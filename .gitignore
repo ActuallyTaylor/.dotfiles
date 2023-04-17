@@ -1,3 +1,5 @@
 .vim/plugged/
 .DS_STORE
 .vim/backup/
+.un~
+

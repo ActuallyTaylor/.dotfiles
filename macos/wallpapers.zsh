@@ -21,6 +21,5 @@ done;
 
 echo "Updating..."
 yabai -m space --focus 1
-brew services stop sketchybar
-brew services start sketchybar
+sketchybar --update
 echo "Done Updating!"
