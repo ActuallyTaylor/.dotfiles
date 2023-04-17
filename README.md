@@ -14,3 +14,6 @@ I also have a script that sits in my custom menu bar that will set the theme dep
 
 ## What terminal do I use?
 I use [iTerm2](https://iterm2.com/)! It has been really nice to use, and I have been using it for al ong time at this point. I would highly recommned checking it out.
+
+# Credits
+A lot of the nvim setup was taken from [lazy.nvim](https://www.lazyvim.org/). It is a super good setup to get started with and I would totally recommend it to anyone new like me.
