@@ -103,3 +103,4 @@ alias ohmyzsh="codium ~/.oh-my-zsh"
 alias python="python3"
 
 export GCC_ARM_TOOLS_PATH="~/Developer/RIT-EVT/ARM/bin"
+export PATH="$HOME/.cargo/bin:$PATH"
