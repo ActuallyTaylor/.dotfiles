@@ -8,3 +8,4 @@ ln -s ~/.dotfiles/linux/hyprland.conf ~/.config/hypr/hyprland.conf
 ln -s ~/.dotfiles/linux/waybar ~/.config/waybar
 ln -s ~/.dotfiles/macos/sketchybar ~/.config/sketchybar/
 ln -s ~/.dotfiles/macos/sketchybar/plugins ~/.config/sketchybar/plugins
+lns -s ~/.dotfiles/nvim/ ~/.config/nvim/
