@@ -40,4 +40,4 @@ opt.smartcase = true
 opt.showcmd = true
 
 opt.termguicolors = true -- True color support
-
+opt.wrap = true

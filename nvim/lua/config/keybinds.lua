@@ -58,7 +58,7 @@ map("n", "<C-s>", "<cmd>w<cr><esc>", { desc = "Save file" })
 map("s", "<C-s>", "<cmd>w<cr><esc>", { desc = "Save file" })
 
 -- Neotree configuration
-map("n",  "\\", "<cmd>Neotree ./<cr>", { desc = "Neotree Toggle" })
+map("n",  "\\", "<cmd>Neotree toggle ./<cr>", { desc = "Neotree Toggle" })
 
 -- Termianl
 map("n", "`", "<cmd>ToggleTerm<cr>", { desc = "Open Terminal"} )
