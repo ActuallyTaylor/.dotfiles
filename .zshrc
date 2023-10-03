@@ -102,9 +102,13 @@ alias ohmyzsh="codium ~/.oh-my-zsh"
 
 export PATH="$HOME/.cargo/bin:$PATH"
 
-export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 export LDFLAGS="-L/opt/homebrew/opt/ruby/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/ruby/include"
 export PKG_CONFIG_PATH="/opt/homebrew/opt/ruby/lib/pkgconfig"
 export EDITOR="nvim"
 export GCC_ARM_TOOLS_PATH="$HOMEBREW_PREFIX/bin"
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)
