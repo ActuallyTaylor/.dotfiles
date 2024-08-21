@@ -2,3 +2,14 @@
 .DS_STORE
 .vim/backup/
 *.un~
+.env
+tt.*
+.tests
+doc/tags
+debug
+.repro
+foo.*
+*.log
+data
+.env
+lazy-lock.json

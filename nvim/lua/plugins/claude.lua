@@ -1,0 +1,3 @@
+return {
+  "pasky/claude.vim",
+}
