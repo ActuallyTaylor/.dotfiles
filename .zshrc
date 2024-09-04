@@ -82,11 +82,11 @@ source $ZSH/oh-my-zsh.sh
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='nvim'
+else
+  export EDITOR='codium'
+fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -101,3 +101,9 @@ export EDITOR="nvim"
 alias zshconfig="codium ~/.zshrc"
 alias ohmyzsh="codium ~/.oh-my-zsh"
 
+# Add this to the beginning of a .zshrc on any computer to load these defaults.
+# if [ -f ~/.dotfiles/.zshrc ]; then
+#    source ~/.dotfiles/.zshrc
+# else
+#     print ".dotfiles/.zshrc Not Found. Default config not loading."
+# fi
