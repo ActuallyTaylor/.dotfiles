@@ -1,0 +1,50 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      // "shift shift": "file_finder::Toggle"
+      "ctrl-left": ["workspace::ActivatePaneInDirection", "Left"],
+      "ctrl-right": ["workspace::ActivatePaneInDirection", "Right"],
+      "ctrl-up": ["workspace::ActivatePaneInDirection", "Up"],
+      "ctrl-down": ["workspace::ActivatePaneInDirection", "Down"],
+      "ctrl-shift-left": ["workspace::SwapPaneInDirection", "Left"],
+      "ctrl-shift-right": ["workspace::SwapPaneInDirection", "Right"],
+      "ctrl-shift-up": ["workspace::SwapPaneInDirection", "Up"],
+      "ctrl-shift-down": ["workspace::SwapPaneInDirection", "Down"]
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      // "j k": ["workspace::SendKeystrokes", "escape"]
+      "cmd-k": "assistant::InlineAssist",
+      "cmd-l": "assistant::NewContext",
+      "ctrl-up": ["workspace::ActivatePaneInDirection", "Up"],
+      "ctrl-down": ["workspace::ActivatePaneInDirection", "Down"],
+      "ctrl-shift-left": ["workspace::SwapPaneInDirection", "Left"],
+      "ctrl-shift-right": ["workspace::SwapPaneInDirection", "Right"],
+      "ctrl-shift-up": ["workspace::SwapPaneInDirection", "Up"],
+      "ctrl-shift-down": ["workspace::SwapPaneInDirection", "Down"]
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "cmd-k": "assistant::InlineAssist",
+      "cmd-shift-c": "terminal::Clear",
+      "ctrl-up": ["workspace::ActivatePaneInDirection", "Up"],
+      "ctrl-down": ["workspace::ActivatePaneInDirection", "Down"],
+      "ctrl-shift-left": ["workspace::SwapPaneInDirection", "Left"],
+      "ctrl-shift-right": ["workspace::SwapPaneInDirection", "Right"],
+      "ctrl-shift-up": ["workspace::SwapPaneInDirection", "Up"],
+      "ctrl-shift-down": ["workspace::SwapPaneInDirection", "Down"]
+    }
+  }
+]

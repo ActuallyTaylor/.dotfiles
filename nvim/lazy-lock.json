@@ -1,5 +1,6 @@
 {
   "LazyVim": { "branch": "main", "commit": "12818a6cb499456f4903c5d8e68af43753ebc869" },
+  "SchemaStore.nvim": { "branch": "main", "commit": "2ff2063191144005eb754356517de65ae45f2e41" },
   "bufferline.nvim": { "branch": "main", "commit": "0b2fd861eee7595015b6561dade52fb060be10c4" },
   "catppuccin": { "branch": "main", "commit": "4fd72a9ab64b393c2c22b168508fd244877fec96" },
   "claude.vim": { "branch": "main", "commit": "883c1fcad735f5e9916fddea54e7068349cc5d59" },
