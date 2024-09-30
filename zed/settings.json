@@ -19,7 +19,7 @@
   "buffer_font_size": 13,
   "theme": {
     "mode": "system",
-    "light": "Atelier Dune Light",
+    "light": "Graphene",
     "dark": "One Dark"
   },
   "show_line_numbers": true,
@@ -40,6 +40,38 @@
           "pythonPath": ".venv/bin/python"
         }
       }
+    },
+    "ruff": {
+      "initialization_options": {
+        "settings": {
+          // Ruff server settings goes here
+          "lineLength": 120,
+          "lint": {
+            "extendSelect": ["I"]
+          }
+        }
+      }
+    }
+  },
+  "languages": {
+    "Python": {
+      "language_servers": ["pyright", "ruff"],
+      "format_on_save": "on",
+      "formatter": [
+        {
+          "code_actions": {
+            // Fix all auto-fixable lint violations
+            "source.fixAll.ruff": true,
+            // Organize imports
+            "source.organizeImports.ruff": true
+          }
+        },
+        {
+          "language_server": {
+            "name": "ruff"
+          }
+        }
+      ]
     }
   }
 }

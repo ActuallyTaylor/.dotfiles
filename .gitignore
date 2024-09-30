@@ -13,3 +13,5 @@ foo.*
 data
 .env
 lazy-lock.json
+zed/embeddings/
+zed/prompts/
