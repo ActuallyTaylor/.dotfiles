@@ -1,3 +1,0 @@
-return {
-  "pasky/claude.vim",
-}

@@ -1,11 +1,21 @@
 # .dotfiles
-These the dotfiles that I use in daily life on macOS and sometimes on linux!
+Dot files for macOS.
 
-## What editor do I use?
-I use [Zed](https://zed.dev/), [VSCodium](https://vscodium.com/) and [Cursor](https://www.cursor.com/). I have began the transition from Cursor -> Zed since Zed introduced Remote Project development in their recent betas.
+## What editors do I use?
+I use [Nova](https://nova.app/), [Zed](https://zed.dev/), and [Xcode](https://developer.apple.com/xcode/).
+- Nova is used for Swift Playdate Development.
+- Zed is used for general text editing & web work.
+- Xcode is used of Apple & Swift development.
 
 ## What terminal do I use?
 I use [iTerm2](https://iterm2.com/)! It has been really nice to use, and I have been using it for a long time at this point. I would highly recommned checking it out.
 
-# Credits
-A lot of the nvim setup was taken from [lazy.nvim](https://www.lazyvim.org/). It is a super good setup to get started with and I would totally recommend it to anyone new like me.
+## Installation
+### Automatic
+Run `install.sh` anywhere on your computer and it will link all of the appropriate files.
+
+### Manual
+You can manually move configuration files. To find the correct paths check `install.sh`
+
+## macOS Keyboard Shortcuts
+I document all of the custom keyboard shortcuts I use in: [macOS Keyboard Shortcuts](./KeyboardShortcuts.md)

@@ -7,10 +7,23 @@
 // custom settings, run `zed: open default settings` from the
 // command palette
 {
+  "icon_theme": "Colored Zed Icons Theme Light",
+  "ssh_connections": [
+    {
+      "host": "100.119.10.5",
+      "username": "lab",
+      "projects": [
+        {
+          "paths": ["~/HomeServer"]
+        }
+      ]
+    }
+  ],
   "assistant": {
+    "enabled": false,
     "default_model": {
       "provider": "zed.dev",
-      "model": "claude-3-5-sonnet-20240620"
+      "model": "claude-3-5-sonnet-latest"
     },
     "version": "2"
   },
@@ -19,7 +32,7 @@
   "buffer_font_size": 13,
   "theme": {
     "mode": "system",
-    "light": "Graphene",
+    "light": "One Light",
     "dark": "One Dark"
   },
   "show_line_numbers": true,
@@ -28,7 +41,7 @@
   "buffer_font_features": {
     "calt": true
   },
-  "ui_font_family": "JetBrainsMono Nerd Font Mono",
+  "ui_font_family": "Zed Plex Sans",
   "lsp": {
     "pyright": {
       "settings": {
@@ -54,6 +67,9 @@
     }
   },
   "languages": {
+    "YAML": {
+      "tab_size": 2
+    },
     "Python": {
       "language_servers": ["pyright", "ruff"],
       "format_on_save": "on",
@@ -72,6 +88,12 @@
           }
         }
       ]
+    }
+  },
+  "git": {
+    "git_gutter": "tracked_files",
+    "inline_blame": {
+      "enabled": true
     }
   }
 }

@@ -10,14 +10,14 @@
     "context": "Workspace",
     "bindings": {
       // "shift shift": "file_finder::Toggle"
-      "ctrl-left": ["workspace::ActivatePaneInDirection", "Left"],
-      "ctrl-right": ["workspace::ActivatePaneInDirection", "Right"],
-      "ctrl-up": ["workspace::ActivatePaneInDirection", "Up"],
-      "ctrl-down": ["workspace::ActivatePaneInDirection", "Down"],
-      "ctrl-shift-left": ["workspace::SwapPaneInDirection", "Left"],
-      "ctrl-shift-right": ["workspace::SwapPaneInDirection", "Right"],
-      "ctrl-shift-up": ["workspace::SwapPaneInDirection", "Up"],
-      "ctrl-shift-down": ["workspace::SwapPaneInDirection", "Down"]
+      "ctrl-left": "workspace::ActivatePaneLeft",
+      "ctrl-right": "workspace::ActivatePaneRight",
+      "ctrl-up": "workspace::ActivatePaneUp",
+      "ctrl-down": "workspace::ActivatePaneDown",
+      "ctrl-shift-left": "workspace::SwapPaneLeft",
+      "ctrl-shift-right": "workspace::SwapPaneRight",
+      "ctrl-shift-up": "workspace::SwapPaneUp",
+      "ctrl-shift-down": "workspace::SwapPaneDown"
     }
   },
   {
@@ -25,13 +25,12 @@
     "bindings": {
       // "j k": ["workspace::SendKeystrokes", "escape"]
       "cmd-k": "assistant::InlineAssist",
-      "cmd-l": "assistant::NewContext",
-      "ctrl-up": ["workspace::ActivatePaneInDirection", "Up"],
-      "ctrl-down": ["workspace::ActivatePaneInDirection", "Down"],
-      "ctrl-shift-left": ["workspace::SwapPaneInDirection", "Left"],
-      "ctrl-shift-right": ["workspace::SwapPaneInDirection", "Right"],
-      "ctrl-shift-up": ["workspace::SwapPaneInDirection", "Up"],
-      "ctrl-shift-down": ["workspace::SwapPaneInDirection", "Down"]
+      "ctrl-up": "workspace::ActivatePaneUp",
+      "ctrl-down": "workspace::ActivatePaneDown",
+      "ctrl-shift-left": "workspace::SwapPaneLeft",
+      "ctrl-shift-right": "workspace::SwapPaneRight",
+      "ctrl-shift-up": "workspace::SwapPaneUp",
+      "ctrl-shift-down": "workspace::SwapPaneDown"
     }
   },
   {
@@ -39,12 +38,12 @@
     "bindings": {
       "cmd-k": "assistant::InlineAssist",
       "cmd-shift-c": "terminal::Clear",
-      "ctrl-up": ["workspace::ActivatePaneInDirection", "Up"],
-      "ctrl-down": ["workspace::ActivatePaneInDirection", "Down"],
-      "ctrl-shift-left": ["workspace::SwapPaneInDirection", "Left"],
-      "ctrl-shift-right": ["workspace::SwapPaneInDirection", "Right"],
-      "ctrl-shift-up": ["workspace::SwapPaneInDirection", "Up"],
-      "ctrl-shift-down": ["workspace::SwapPaneInDirection", "Down"]
+      "ctrl-up": "workspace::ActivatePaneUp",
+      "ctrl-down": "workspace::ActivatePaneDown",
+      "ctrl-shift-left": "workspace::SwapPaneLeft",
+      "ctrl-shift-right": "workspace::SwapPaneRight",
+      "ctrl-shift-up": "workspace::SwapPaneUp",
+      "ctrl-shift-down": "workspace::SwapPaneDown"
     }
   }
 ]
