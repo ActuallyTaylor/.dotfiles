@@ -15,3 +15,6 @@ data
 lazy-lock.json
 zed/prompts
 zed/embeddings
+zed/conversations
+zed/keymap_backup.json
+zed/settings_backup.json
