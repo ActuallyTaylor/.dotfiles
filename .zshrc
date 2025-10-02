@@ -80,10 +80,10 @@ source $ZSH/oh-my-zsh.sh
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='nvim'
 else
-  export EDITOR='zed'
+  export EDITOR='nvim'
 fi
-alias zshconfig="zed ~/.zshrc"
-alias ohmyzsh="zed ~/.oh-my-zsh"
+alias zshconfig="$EDITOR ~/.zshrc"
+alias ohmyzsh="$EDITOR ~/.oh-my-zsh"
 
 # Add this to the beginning of a .zshrc on any computer to load these defaults.
 # if [ -f ~/.dotfiles/.zshrc ]; then
