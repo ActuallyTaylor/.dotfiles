@@ -1,5 +1,5 @@
-MacOS[[:space:]]Icons/artwork filter=lfs diff=lfs merge=lfs -text
 *.icns filter=lfs diff=lfs merge=lfs -text
+*.icon filter=lfs diff=lfs merge=lfs -text
 MacOS[[:space:]]Icons/artwork/Prg[[:space:]]Dark.png filter=lfs diff=lfs merge=lfs -text
 MacOS[[:space:]]Icons/artwork/MX.png filter=lfs diff=lfs merge=lfs -text
 MacOS[[:space:]]Icons/artwork/MX[[:space:]]Dark.png filter=lfs diff=lfs merge=lfs -text
