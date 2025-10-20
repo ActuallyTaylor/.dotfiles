@@ -19,3 +19,5 @@ zed/conversations
 zed/keymap_backup.json
 zed/settings_backup.json
 *.mdb
+/zed/prompts
+/zed/embeddings
