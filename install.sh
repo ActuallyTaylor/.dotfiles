@@ -20,3 +20,10 @@ if [ ! -L ~/.config/karabiner/karabiner.json ]; then
 else
   echo "Karabiner symlink already exists"
 fi
+
+if [ ! -L ~/.config/helix/config.toml ]; then
+  echo "Creating symlink for helix settings"
+  ln -s ~/.dotfiles/helix/config.toml ~/.config/helix/config.toml
+else
+  echo "Helix config symlink already exists"
+fi
