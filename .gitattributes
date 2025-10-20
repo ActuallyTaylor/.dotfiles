@@ -6,3 +6,6 @@ MacOS[[:space:]]Icons/artwork/MX[[:space:]]Dark.png filter=lfs diff=lfs merge=lf
 MacOS[[:space:]]Icons/artwork/IDE.png filter=lfs diff=lfs merge=lfs -text
 MacOS[[:space:]]Icons/artwork/IDE[[:space:]]Dark.png filter=lfs diff=lfs merge=lfs -text
 MacOS[[:space:]]Icons/artwork/Prg.png filter=lfs diff=lfs merge=lfs -text
+MacOS[[:space:]]Icons/artwork/CubeIDE.icon/** filter=lfs diff=lfs merge=lfs -text
+MacOS[[:space:]]Icons/artwork/CubeMX.icon/** filter=lfs diff=lfs merge=lfs -text
+MacOS[[:space:]]Icons/artwork/CubeProgrammer.icon/** filter=lfs diff=lfs merge=lfs -text
