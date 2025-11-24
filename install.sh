@@ -21,9 +21,9 @@ else
   echo "Karabiner symlink already exists"
 fi
 
-if [ ! -L ~/.config/helix/config.toml ]; then
+if [ ! -L ~/.config/helix ]; then
   echo "Creating symlink for helix settings"
-  ln -s ~/.dotfiles/helix/config.toml ~/.config/helix/config.toml
+  ln -s ~/.dotfiles/helix ~/.config
 else
-  echo "Helix config symlink already exists"
+  echo "Helix folder symlink already exists. Delete the helix folder..."
 fi

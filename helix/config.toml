@@ -2,6 +2,12 @@ theme="snazzy"
 
 [editor]
 end-of-line-diagnostics = "hint"
+gutters = ["diagnostics", "spacer", "line-numbers", "spacer"]#, "diff"]
+
+[editor.cursor-shape]
+normal = "block"
+insert = "bar"
+select = "block"
 
 [editor.inline-diagnostics]
 cursor-line = "warning" # show warnings and errors on the cursorline inline
@@ -16,5 +22,6 @@ focus-lost = true
 [editor.indent-guides]
 render = true
 
-[keys.select]
-y = ["yank", ":clipboard-yank"]
+[editor.soft-wrap]
+enable = true
+
