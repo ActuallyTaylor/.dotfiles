@@ -7,15 +7,16 @@
 // custom settings, run `zed: open default settings` from the
 // command palette
 {
+  "disable_ai": true,
   "show_edit_predictions": false,
   "edit_predictions": {
     "mode": "subtle",
     "copilot": {
       "proxy": null,
       "proxy_no_verify": null,
-      "enterprise_uri": null
+      "enterprise_uri": null,
     },
-    "enabled_in_text_threads": false
+    "enabled_in_text_threads": false,
   },
   "icon_theme": "Colored Zed Icons Theme Light",
   "ssh_connections": [
@@ -24,60 +25,47 @@
       "username": "lab",
       "projects": [
         {
-          "paths": [
-            "~/HomeServer"
-          ]
-        }
-      ]
+          "paths": ["~/HomeServer"],
+        },
+      ],
     },
     {
       "host": "100.75.199.98",
       "username": "taylor",
       "projects": [
         {
-          "paths": [
-            "/home/taylor"
-          ]
+          "paths": ["/home/taylor"],
         },
         {
-          "paths": [
-            "/home/taylor/fuzzer"
-          ]
-        }
-      ]
-    }
+          "paths": ["/home/taylor/fuzzer"],
+        },
+      ],
+    },
   ],
-  "agent": {
-    "enabled": false,
-    "default_model": {
-      "provider": "zed.dev",
-      "model": "claude-sonnet-4"
-    }
-  },
   "base_keymap": "VSCode",
   "ui_font_size": 14,
   "buffer_font_size": 13,
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "One Dark"
+    "dark": "One Dark",
   },
   "autosave": "on_focus_change",
   "buffer_font_family": "Maple Mono NF",
   "buffer_font_features": {
-    "calt": true
+    "calt": true,
   },
   "lsp": {
     "pyright": {
       "settings": {
         "python.analysis": {
           "diagnosticMode": "workspace",
-          "typeCheckingMode": "strict"
+          "typeCheckingMode": "strict",
         },
         "python": {
-          "pythonPath": ".venv/bin/python"
-        }
-      }
+          "pythonPath": ".venv/bin/python",
+        },
+      },
     },
     "ruff": {
       "initialization_options": {
@@ -85,40 +73,38 @@
           // Ruff server settings goes here
           "lineLength": 120,
           "lint": {
-            "extendSelect": ["I"]
-          }
-        }
-      }
-    }
+            "extendSelect": ["I"],
+          },
+        },
+      },
+    },
   },
   "languages": {
     "YAML": {
-      "tab_size": 2
+      "tab_size": 2,
     },
     "Python": {
       "language_servers": ["pyright", "ruff"],
       "format_on_save": "on",
       "formatter": [
         {
-          "code_actions": {
-            // Fix all auto-fixable lint violations
-            "source.fixAll.ruff": true,
-            // Organize imports
-            "source.organizeImports.ruff": true
-          }
+          "code_action": "source.fixAll.ruff",
+        },
+        {
+          "code_action": "source.organizeImports.ruff",
         },
         {
           "language_server": {
-            "name": "ruff"
-          }
-        }
-      ]
-    }
+            "name": "ruff",
+          },
+        },
+      ],
+    },
   },
   "git": {
     "git_gutter": "tracked_files",
     "inline_blame": {
-      "enabled": true
-    }
-  }
+      "enabled": true,
+    },
+  },
 }
