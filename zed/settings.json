@@ -7,6 +7,28 @@
 // custom settings, run `zed: open default settings` from the
 // command palette
 {
+  "diff_view_style": "split",
+  "cli_default_open_behavior": "existing_window",
+  "hard_tabs": false,
+  "tab_size": 4,
+  "format_on_save": "off",
+  "project_panel": {
+    "dock": "left"
+  },
+  "outline_panel": {
+    "dock": "left"
+  },
+  "collaboration_panel": {
+    "dock": "left"
+  },
+  "agent": {
+    "dock": "right",
+    "favorite_models": [],
+    "model_parameters": []
+  },
+  "git_panel": {
+    "dock": "left"
+  },
   "disable_ai": true,
   "show_edit_predictions": false,
   "edit_predictions": {
@@ -18,7 +40,11 @@
     },
     "enabled_in_text_threads": false,
   },
-  "icon_theme": "Colored Zed Icons Theme Light",
+  "icon_theme": {
+    "mode": "light",
+    "light": "Colored Zed Icons Theme Light",
+    "dark": "Colored Zed Icons Theme Light"
+  },
   "ssh_connections": [
     {
       "host": "100.119.10.5",
@@ -42,11 +68,11 @@
       ],
     },
   ],
-  "base_keymap": "VSCode",
+  "base_keymap": "Zed",
   "ui_font_size": 14,
   "buffer_font_size": 13,
   "theme": {
-    "mode": "system",
+    "mode": "dark",
     "light": "One Light",
     "dark": "One Dark",
   },
@@ -83,23 +109,12 @@
     "YAML": {
       "tab_size": 2,
     },
-    "Python": {
-      "language_servers": ["pyright", "ruff"],
-      "format_on_save": "on",
-      "formatter": [
-        {
-          "code_action": "source.fixAll.ruff",
-        },
-        {
-          "code_action": "source.organizeImports.ruff",
-        },
-        {
-          "language_server": {
-            "name": "ruff",
-          },
-        },
-      ],
-    },
+    "Swift": {
+      "enable_language_server": true,
+      "language_servers": ["sourcekit-lsp"],
+      "format_on_save": "off",
+      "tab_size": 4
+    }
   },
   "git": {
     "git_gutter": "tracked_files",

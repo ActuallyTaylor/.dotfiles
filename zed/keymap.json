@@ -45,5 +45,22 @@
       "ctrl-shift-up": "workspace::SwapPaneUp",
       "ctrl-shift-down": "workspace::SwapPaneDown"
     }
+  },
+  {
+    "bindings": {
+      "cmd-o": "editor::OpenSelectedFilename"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "cmd-o": "command_palette::Toggle"
+    }
+  },
+  {
+    "context": "Workspace",
+    "unbind": {
+      "cmd-shift-p": "command_palette::Toggle"
+    }
   }
 ]
