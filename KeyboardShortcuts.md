@@ -21,6 +21,7 @@ I use key binds in mission control to quickly switch spaces using my keyboard.
 - Switch to Desktop 8: <kbd>hyper</kbd> + <kbd>8</kbd>
 - Switch to Desktop 9: <kbd>hyper</kbd> + <kbd>9</kbd>
 - Switch to Desktop 10: <kbd>hyper</kbd> + <kbd>0</kbd>
+- Ask Siri about active window: <kbd>opt</kbd> + <kbd>cmd</kbd> + <kbd>space</kbd>
 
 ## App Shortcuts
 ### All Applications
